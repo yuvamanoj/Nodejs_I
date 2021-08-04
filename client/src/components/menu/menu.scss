@@ -1,0 +1,94 @@
+@import "../../constants/constants";
+@import "../../constants/media-queries";
+
+.security--shell {
+  .security--header__group {
+    > li:first-child {
+      display: none;
+    }
+  }
+
+  .security--toolbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    padding: .5rem .25rem;
+    background-color: #161616;
+    background-color: var(--ui-background,#161616);
+    box-sizing: border-box;
+    z-index: 8002;
+  }
+
+  .security--button--icon {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    background: 0 0;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    position: relative;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    color: #f4f4f4;
+    color: var(--icon-01,#f4f4f4);
+    background-color: inherit;
+    align-items: center;
+    fill: currentColor;
+    justify-content: center;
+    transition: background-color .2s cubic-bezier(.2,0,.38,.9);
+  }
+
+  .security--button--icon--tooltip--right::before {
+    transform: translate(.25rem,-50%);
+  }
+  
+  .security--button--icon--tooltip--right::before {
+    left: calc(100% + .25rem);
+  }  
+
+  .security--toolbar__nav__item__icon {
+    filter: brightness(0) invert(1);
+  }
+  // TODO: Remove after @carbon/ibm-security refactor Shell component that will support custom link elements
+  nav[aria-label="First tab"] {
+    h1 {
+      display: none;
+    }
+    a.security--nav__list__item__link {
+      padding: 0;
+
+      .navLinks {
+        padding: .375rem 2rem;;
+        width: 100%;
+        svg {
+          fill: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .security--header__container.security--shell--active__header {
+    display: none;
+  }
+
+  @include respond-to(mobile) {
+    .security--toolbar {
+      top: 0;
+    }
+    .security--toolbar__panel {
+      top: 0;
+    }
+  }
+}

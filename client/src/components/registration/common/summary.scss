@@ -1,0 +1,99 @@
+.summary-cont {
+    
+    .title-info {
+        font-size: 14px;
+        color: #ccc;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info-sum {
+        padding-bottom: 1rem;
+        border-bottom: 0.1px solid #4c4c4c;
+
+        .title-header {
+            font-size: 16px;
+            color: fff;
+            margin-bottom: 1rem;
+        }
+
+        .fx-box {
+            display: flex;
+            flex-direction: inherit;                       
+        }
+        
+        .fx-box div {
+            width: 25%;
+            margin-bottom: 10px;
+            padding-right: 5px;       
+        }        
+
+        .blank-number {
+            margin-left: 2.5rem
+        }
+
+    }
+
+    .tool-set-sum {
+        padding: 1rem 0;
+        // border-bottom: 0.1px solid #4c4c4c;
+
+        .title-header {
+            font-size: 16px;
+            color: fff;
+            margin-bottom: 1rem;
+        }
+
+        .fx-box {
+            display: flex;
+            flex-direction: inherit;                       
+        }
+        
+        .fx-box div {
+            width: 25%;
+            margin-bottom: 10px;
+            padding-right: 5px;          
+        }        
+
+    }
+
+    .cloud-env-sum {
+        padding: 1rem 0;
+        border-bottom: 0.1px solid #4c4c4c;
+
+        .title-header {
+            font-size: 16px;
+            color: fff;
+            margin-bottom: 1rem;
+        }
+
+        .fx-box {
+            display: flex;
+            flex-direction: inherit;                       
+        }
+        
+        .fx-box div {
+            width: 25%;
+            margin-bottom: 10px;
+            padding-right: 5px;            
+        }        
+
+    }
+
+    .prop-name {
+        font-weight: bold;
+        font-size: 13px;
+        color: #ccc;
+    }
+
+    .prop-value {
+        font-size: 13px;
+        color: #ccc;
+        overflow-wrap: break-word;
+    }
+    
+    .bx--tooltip__trigger.bx--tooltip__trigger--definition.bx--tooltip--top + .bx--assistive-text {
+            background-color: whitesmoke;
+            color: black;
+    }    
+
+}

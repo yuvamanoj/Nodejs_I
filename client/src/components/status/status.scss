@@ -1,0 +1,211 @@
+.status-cont-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3.4rem;
+}
+.status-container {
+    // margin-left: 3.4rem;
+    margin-top: 1rem;
+
+    .tile-content-cont {
+
+    }
+    .tile-container { 
+        margin-left: 1.4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    .useful-link-title {
+        margin: 8px 0;
+        font-size: 11px;
+        color: #8c8c8c;
+    }
+
+    .useful-link-cont {
+        margin: 8px 0px;
+
+        .useful-links {
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+        }
+
+        svg {
+            fill: white;
+        }
+    }    
+    
+}
+
+.device-list-cont {
+    .device-list-header {
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: #565656;
+    }
+
+    .device-lists {
+        // height: 230px;
+        // overflow-y: scroll;
+    }
+
+    .device {
+        padding: 10px;
+        color: #a4a4a4;
+        background-color: #3d3d3d;
+        border-bottom: 0.5px solid #a4a4a4;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #3d3d3d;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #565656;
+        border-radius: 6px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+}
+
+.activity-title {
+    font-size: 16px;
+    color: white;
+    margin: 15px 0;
+}
+
+.modal-bottom {
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+.contact-info {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+
+    span {
+        color: cornflowerblue;
+    }
+}
+
+// =====================
+
+.status-btn {
+    height: 6px;
+    width: 6px;                
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: red;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.details {    
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    top: 0;
+    background-color: #2c2c2c;
+    z-index: 100;
+    padding: 1.5rem;
+
+    .details-header {
+        border-bottom: 0.5px solid #4c4c4c;
+        padding-bottom: 1rem ;
+        font-size: 18px;
+        font-weight: 600;
+
+        Button {
+            float: right;
+            color: white;
+            top: -10px;
+        }
+
+        Button:hover {
+            background-color: transparent;
+        }
+    }
+
+    .details-content {
+        padding-top: 1rem;
+        font-size: 13px;
+    
+        .property-cont {
+            display: flex;
+                
+            .property-name {
+                color: #a4a4a4;                
+                margin-bottom: 2rem;
+                width: 40%;
+            }
+        
+            .property-val {
+                color: white;
+                margin-left: 2rem;
+                font-weight: 200;
+            }
+        }        
+
+        .activity-details-title{
+            margin: 1.5rem 0;
+            font-size: 17px;    
+        }
+
+        // .bx--data-table th {
+        //     color: #fff;
+        //     background-color: #5c5c5c;
+        // }
+
+        // .bx--data-table td {            
+        //     color: #9c9c9c;
+        //     background: #3d3d3d;
+        //     border-top: 1px solid #3d3d3d;
+        //     border-bottom: 1px solid #4c4c4c;
+        // }
+
+        .details-bottom {
+            margin-top: 2.5rem;
+            color: whitesmoke;
+        }
+        
+        .contact-info {
+            margin-top: 10px;
+            margin-bottom: 2rem;
+        
+            span {
+                color: cornflowerblue;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 66rem) {
+    .bx--modal-container--xs {
+        width: 27%;
+        max-height: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.info-block {
+    padding: 0 0.1rem;
+    
+    .info-desc {
+        margin: 5px 0px 20px 0px;
+        font-size: 12px;
+    }
+
+    .info-list-item {
+        margin-bottom: 15px;
+
+        li {
+            font-style: italic;
+            font-size: 12px;
+            list-style-type: disc;
+            margin-left: 10px;
+        }
+    }
+
+    .highlight {
+        font-weight: bold;
+    }
+
+    .redirects {
+        color: #78A9FF;
+    }
+}

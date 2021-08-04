@@ -1,0 +1,101 @@
+.registration-cont {
+    margin-left: 1rem;
+    width: 85%;
+    // border: 1px solid red;
+}
+
+.vertical-progress {
+    margin: 1rem 5px;
+    width: 100%;
+    background-color: #262626;
+    padding: 2rem 1.5rem;
+    min-height: 715px;
+
+    .bx--progress-label {
+        color: white;
+    }
+
+    .progress-header {
+        color: white;
+    }
+
+    .progress-title-desc {
+        font-size: 12px;
+        color: #8c8c8c;
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+}
+
+.main-cont {
+    background-color: #262626;
+    margin: 1rem -1.5rem 0rem -1.5rem;
+
+    .form-cont {
+        // background-color: #262626;
+        // margin: 1rem -1.5rem 0rem -1.5rem;
+        padding: 2rem 1.5rem;
+        min-height: 631px;
+    
+        .form-cont-title {
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        .bx--label {
+            color: #8c8c8c
+        }
+    
+        .bx--text-input {
+            border: none;
+            background-color: #282828;
+            border-bottom: 1px solid #8c8c8c;
+            width: 100%;
+            color: #8c8c8c
+        }
+    }
+
+    .info-cont {
+        margin-top: 4rem;
+        padding: 2rem 1.5rem;
+        min-height: 550px;
+    }
+}
+
+
+
+.bx--radio-button__appearance {
+    border: 1px solid #8c8c8c
+}
+
+.bx--radio-button__appearance:before {
+    background-color: #8c8c8c;
+}
+
+.form-footer {
+   margin: 0 -1.5rem 5rem -1.5rem;
+   background-color: #262626;
+
+   .action-btn {    
+     padding: 2rem 0rem 2rem 1rem;
+     width: 33.3%;
+    }
+
+   .btn-cancel {
+       background-color: #262626;
+   } 
+
+   .back-btn-cont {
+        display: inline-block;
+        max-width: 33.3%;
+        width: 33.3%;
+   }
+
+}
+
+.bx--progress-step--incomplete svg {
+    fill: #ffffff;
+}
+
+
+

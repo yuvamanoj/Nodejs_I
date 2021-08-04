@@ -1,0 +1,26 @@
+.tool-set {
+    .bx--select {
+
+        .bx--select-input__wrapper {
+            width: 100%;
+        }
+
+        .bx--select-input {
+            width: 100%;
+        }
+
+        .bx--select-option {
+            color: #8c8c8c;
+        }
+    }
+
+    .bx--select-input {
+        background-color: #282828 !important;
+        color: #8c8c8c !important;
+    };
+
+    .bx--select__arrow {
+        fill: #8c8c8c;
+    };
+}
+
