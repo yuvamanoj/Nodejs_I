@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: {{ template "chart.fullname" .}}
+data:
+  application.yml: |-
+    {{ .Values.config | toYaml | indent 4 | trim }}

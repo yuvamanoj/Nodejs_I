@@ -1,0 +1,34 @@
+# create the service account
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: dashboad
+#imagePullSecrets:
+#  - name: usicrimagecred
+ # namespace: devops
+---
+# create the role to grant access to configmaps
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+ # namespace: devops
+  name: role-dashboad
+rules:
+  - apiGroups: [""] # "" indicates the core API group
+    resources: ["pods","configmaps"]
+    verbs: ["get", "watch", "list"]
+---
+# bind the role and the service account
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rolebinding-dashboad
+ # namespace: devops
+subjects:
+  - kind: ServiceAccount
+    name: dashboad # Name is case sensitive
+#    namespace: devops
+roleRef:
+  kind: Role #this must be Role or ClusterRole
+  name: role-dashboad # this must match the name of the Role or ClusterRole you wish to bind to
+  apiGroup: rbac.authorization.k8s.io

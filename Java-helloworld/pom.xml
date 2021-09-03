@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ IBM Confidential - OCO Source Materials
+  ~ Copyright (c) IBM Corp. 1992, 2020
+  ~ Copyright (c) Internet Security Systems, Inc. 1992-2006
+  ~ The source code for this program is not published or otherwise divested of its trade secrets,
+  ~ irrespective of what has been deposited with the U.S. Copyright Office.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.ibm.sec</groupId>
+    <artifactId>mss-spring-boot-app-parent</artifactId>
+    <version>2.3.9</version>
+  </parent>
+
+  <groupId>com.ibm.sec</groupId>
+  <artifactId>Java-helloworld</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <inceptionYear>2021</inceptionYear>
+
+  <properties>
+  </properties>
+
+  
+
+  <dependencies>
+  </dependencies>
+
+</project>
